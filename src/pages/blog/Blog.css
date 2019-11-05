@@ -1,0 +1,29 @@
+.top-posts {
+  @apply flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  margin: 0 -15px;
+}
+
+.top-post-image-wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.top-post-item {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+
+.top-post-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top-post-dummy {
+  width: 250px;
+  height: 250px;
+  background: url('https://nanosemantics.ai/wp-content/themes/nanosemantics.ai/resources/assets/images/post-placeholders/shape_7.svg') no-repeat center / cover;
+}

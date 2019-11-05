@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link, StaticQuery } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout/Layout'
 import SEO from '../components/seo'
 
 const IndexPage = () => (
@@ -70,7 +70,6 @@ const IndexPage = () => (
         )
       }}
     />
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

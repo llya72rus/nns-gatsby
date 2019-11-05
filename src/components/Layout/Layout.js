@@ -8,11 +8,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import Header from './header/Header'
+import Header from '../header/Header'
+import './Layout.css'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query Blalas {
+    {
       site {
         siteMetadata {
           title
@@ -25,7 +26,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
-        <main>{children}</main>
+        <main>
+          <div className="container">{children}</div>
+        </main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
